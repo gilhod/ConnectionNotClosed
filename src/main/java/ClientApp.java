@@ -30,7 +30,7 @@ public class ClientApp {
       });
       request.response(arResponse -> {
         if (arResponse.failed()) {
-          System.out.println("response failure: " + arRequest.cause());
+          System.out.println("response failure: " + arResponse.cause());
           return;
         }
         HttpClientResponse response = arResponse.result();
